@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/all-cars.css">
         <link rel="stylesheet" href="styles/common.css">
+        <link rel="stylesheet" href="styles/create-car.css">
+        <script src="scripts/script.js"></script>
         <title>Car info | All cars</title>
     </head>
     <body>
@@ -21,68 +23,28 @@
         <main>
             <h1>All cars</h1>
             <table>
-                <tr>
-                    <th>Car Make</th>
-                    <th>Car Model</th>
-                    <th>Horsepower</th>
-                    <th>Year</th>
-                    <th>Mileage (km)</th>
-                    <th>Price (€)</th>
-                    <th>Image</th>
-                </tr>
-                <tr>
-                    <td>BMW</td>
-                    <td>M5</td>
-                    <td>367</td>
-                    <td>2019.</td>
-                    <td>123,000</td>
-                    <td>25,500</td>
-                    <td>
-                        <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMFK1wh8hnbBSlGHmin7zGIJkRR-m4GxoDMw&s" target="_blank">
-                            Link
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Fiat</td>
-                    <td>Punto</td>
-                    <td>120</td>
-                    <td>2005.</td>
-                    <td>336,000</td>
-                    <td>4,500</td>
-                    <td>
-                        <a href="https://s1.cdn.autoevolution.com/images/gallery/FIATPunto5Door-159_3.jpg" target="_blank">
-                            Link
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Suzuki</td>
-                    <td>Vitara</td>
-                    <td>130</td>
-                    <td>2024.</td>
-                    <td>3,500</td>
-                    <td>21,500</td>
-                    <td>
-                        <a href="https://cdn.motor1.com/images/mgl/MkOVVN/s3/suzuki-vitara-2024.jpg" target="_blank">
-                            Link
-                        </a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Opel</td>
-                    <td>Astra</td>
-                    <td>95</td>
-                    <td>2011.</td>
-                    <td>195,000</td>
-                    <td>5,000</td>
-                    <td>
-                        <a href="https://www.njuskalo.hr/image-w920x690/auti/opel-astra-j-1.7-cdti-sport-2011-g-slika-149246478.jpg" target="_blank">
-                            Link
-                        </a>
-                    </td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th>Car Make</th>
+                        <th>Car Model</th>
+                        <th>Horsepower</th>
+                        <th>Year</th>
+                        <th>Mileage (km)</th>
+                        <th>Price (€)</th>
+                        <th>Color</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
             </table>
+            <button id="add-car-btn">Add car</button>
+            <div class="add-form-div">
+                <form onsubmit="event.preventDefault();" id="create-form"></form>
+            </div>
+            <div class="add-form-div">
+                <form onsubmit="event.preventDefault();" id="edit-form"></form>
+            </div>
         </main>
     </body>
 </html>

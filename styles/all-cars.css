@@ -32,3 +32,25 @@ tr a {
 tr a:hover {
     text-decoration: underline;
 }
+
+#add-car-btn {
+    margin-top: 50px;
+    flex-basis: 35%;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#add-car-btn:hover {
+    background-color: darkgray;
+}
+
+.add-form-div {
+    flex-basis: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}

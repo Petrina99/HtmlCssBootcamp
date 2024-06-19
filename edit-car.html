@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="styles/create-car.css">
         <link rel="stylesheet" href="styles/common.css">
+        <script src="scripts/update-car.js"></script>
         <title>Car info | Edit car</title>
     </head>
     <body>
@@ -15,23 +16,22 @@
             <nav>
                 <a href="all-cars.html">All cars</a>
                 <a href="create-car.html">Create car</a>
-                <a href="edit-car.html">Edit car</a>
             </nav>
         </header>
         <main>
             <h1>Edit car</h1>
-            <form id="edit-form">
+            <form id="edit-form" onsubmit="event.preventDefault();">
+                <input type="text" name="car-make" id="car-make-form" placeholder="Car make">
                 <input type="text" name="car-model" id="car-model-form" placeholder="Car model">
                 <input type="number" name="horsepower" id="horsepower-form" placeholder="Horsepower">
                 <input type="date" name="year" id="year-form" placeholder="Year">
                 <input type="number" name="mileage" id="mileage-form" placeholder="Mileage">
                 <input type="number" name="price" id="price-form" placeholder="Price (€)">
-                <select name="color" id="cars" aria-placeholder="Color">
-                    <option value="" disabled selected>Color</option>
-                    <option value="red">Red</option>
+                <select name="color" id="color-select" aria-placeholder="Color">
+                    <option value="Red">Red</option>
                     <option value="black">Black</option>
-                    <option value="white">White</option>
-                    <option value="gray">Gray</option>
+                    <option value="White">White</option>
+                    <option value="Gray">Gray</option>
                 </select>
                 <div class="submit-btn-div">
                     <input type="submit" id="submit-btn">

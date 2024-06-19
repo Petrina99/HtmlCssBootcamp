@@ -46,7 +46,7 @@ header {
 nav {
     flex-basis: 20%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 nav a {

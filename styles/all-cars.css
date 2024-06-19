@@ -33,7 +33,7 @@ tr a:hover {
     text-decoration: underline;
 }
 
-#add-car-btn {
+#add-car-link {
     margin-top: 50px;
     flex-basis: 35%;
     padding: 1em;
@@ -42,9 +42,11 @@ tr a:hover {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }
 
-#add-car-btn:hover {
+#add-car-link:hover {
     background-color: darkgray;
 }
 
